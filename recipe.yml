@@ -3,10 +3,10 @@ id: core
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/pico:dev
+  base: docker.io/library/debian:unstable
   singlelayer: false
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: Dajix
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
